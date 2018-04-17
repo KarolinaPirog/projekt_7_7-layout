@@ -133,3 +133,55 @@ body {
     letter-spacing: -1px;
     text-align: center;
 }
+.icon {
+    width: 68px;
+    height: 67px;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.services {
+    .continer {
+        .row {
+            img {
+                text-align: center;
+            }
+        }
+    }
+}
+.picture {
+    display: flex;
+    justify-content: center;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 7px solid #f1f1f1;
+    background-color: #fed136;
+    p {
+        justify-content: center;
+        align-items: center;
+        width: 107px;
+        height: 94px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -0.45px;
+    }
+}
+
+    .image {
+        margin-top: 20px;
+        float: right;
+        align-items: center;
+    }
+    .left {
+        float: left;
+    }
+    .picture {
+        text-align: center;
+
+    }
+}

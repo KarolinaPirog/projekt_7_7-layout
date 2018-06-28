@@ -387,6 +387,8 @@ body {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 .formularz .textarea {
@@ -396,5 +398,16 @@ body {
       flex-grow: 2;
   -ms-flex-align: center;
       align-items: center;
+}
+
+.fab {
+  width: 30px;
+  height: 30px;
+  background: #222222;
+  border-radius: 50%;
+  border: 5px solid #222222;
+  color: #ccc;
+  padding: 3px;
+  float: left;
 }
 /*# sourceMappingURL=style.css.map */

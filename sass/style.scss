@@ -260,25 +260,25 @@ body {
     border: 7px solid #f1f1f1;
     background-color: #fed136;
     margin-top: 20px;
-  }
-  .socialm {
+}
+.socialm {
     background-color: #000000;
     border-radius: 50%;
     width: 42px;
     height: 42px;
-  }
-  .team{
+}
+.team{
     display: flex;
     justify-content: space-around;
-  }
-  .dot {
+}
+.dot {
     width: 221px;
     height: 221px;
     border: 7px solid #ffffff;
     background-color: #111111;
     border-radius: 50%;
-  }
-  .formularz{
+}
+.formularz{
     display: flex;
     background-color: #222222;
     height: 500px;
@@ -288,13 +288,24 @@ body {
         .smalltitle {
             color:#787878;
         }
-      .email-text {
-        flex-direction: column;
-        align-items: center;    
-      }
-      .textarea {
-        flex-direction: column;
-        flex-grow: 2;
-        align-items: center;
-      }
-  }
+        .email-text {
+            flex-direction: column;
+            align-items: center; 
+            justify-content: space-between;   
+        }
+        .textarea {
+            flex-direction: column;
+            flex-grow: 2;
+            align-items: center;
+        }
+}
+.fab {
+    width: 30px;
+    height: 30px;
+    background:#222222;
+    border-radius: 50%;
+    border: 5px solid #222222;
+    color: #ccc;
+    padding: 3px;
+    float: left;
+}

@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="header">
+    <section class="header container">
         <div class="nav">
             <img src="images/logo-treehouse.jpg" alt="">
             <ul>
@@ -27,7 +27,7 @@
         <button type="button" class="btn btn-warning button">tell me more</button>
         
     </section>
-    <section class="services">
+    <section class="services container">
         <p class="title">services</p>
         <p class="smalltitle">Proin iaculis purus consequat sem cure.</p>
         <div class ="container">
@@ -35,28 +35,28 @@
                 <div class="services col-s-12 col-m-3 col-m-offset-2">
                    <img class="icon" src=images/icon-basket.jpg alt="">
                     <p class="smallheader">E-Commerce</p>
-                    <p>Proin iaculis purus consequat sem cure 
+                    <p class="services-text">Proin iaculis purus consequat sem cure 
                         digni ssim. Donec porttitora entum suscipit 
                         aenean rhoncus posuere odio in tincidunt.</p>
                 </div>
                 <div class="col-s-12 col-m-3">
                     <img class="icon" src=images/icon-laptop.jpg alt="">
                     <p class="smallheader">Responsive Web</p>
-                    <p>Proin iaculis purus consequat sem cure 
+                    <p class="services-text">Proin iaculis purus consequat sem cure 
                         digni ssim. Donec porttitora entum suscipit 
                        aenean rhoncus posuere odio in tincidunt.</p>
                 </div>
                 <div class="col-s-12 col-m-3">
                     <img class="icon" src=images/icon-locked.jpg alt="">
                     <p class="smallheader">Web Security</p>
-                    <p>Proin iaculis purus consequat sem cure 
+                    <p class="services-text">Proin iaculis purus consequat sem cure 
                         digni ssim. Donec porttitora entum suscipit 
                         aenean rhoncus posuere odio in tincidunt.</p>
                 </div>
             </div>
         </div>   
     </section>
-    <section class="portfolio">
+    <section class="portfolio container">
         <p class="title">our portfolio</p>
         <p class="smalltitle">Proin iaculis purus consequat sem cure.</p>
         <div class="row">
@@ -98,7 +98,7 @@
         <p class="title">about us</p>
         <p class="smalltitle">Proin iaculis purus consequat sem cure.</p>
         <div class="item">
-            <div class="item-hidden">&nbsp</div>
+            <div class="item-hidden">&nbsp;</div>
             <div class="item-image">
                 <img src=images/about_us.jpg alt=""> 
             </div>
@@ -121,10 +121,10 @@
             <div class="item-image">
                 <img src=images/about_us2.jpg alt="">
             </div> 
-            <div class="item-hidden">&nbsp</div>
+            <div class="item-hidden">&nbsp;</div>
         </div>
         <div class="item">
-                <div class="item-hidden">&nbsp</div>
+                <div class="item-hidden">&nbsp;</div>
                 <div class="item-image">
                     <img src=images/about_us3.jpg alt="">
                  </div>
@@ -147,13 +147,13 @@
             <div class="item-image">
                     <img class="image" src=images/about_us4.jpg alt="">
             </div>
-            <div class="item-hidden">&nbsp</div>    
+            <div class="item-hidden">&nbsp;</div>    
         </div>
         <div class="picture">
             <p>our<br>story<br>continues<br>...</p>
         </div>
     </section>
-    <section class="team">
+    <section class="team container">
         <div>
             <p class="dot"></p>
             <p>Kimberly Thompson</p>
@@ -180,21 +180,29 @@
             <p class="title">contact us</p>
             <p class="smalltitle">Proin iaculis purus consequat sem cure </p><br>
         </div>
-        <div class="email-text"> 
-            <form>
-                <input type="text" name="name" placeholder="Your Name*"><br>
-                <input type="email" name="email" placeholder="Your e-Mail*"><br>
-                <input type="text" name="subject" placeholder="Subject*">
-            </form>
+        <div class="formularz-flex">
+            <div class="email-text"> 
+                <form>
+                    <input type="text" class="name" name="name" placeholder="Your Name*"><br>
+                    <input type="email" class="name-2" name="email" placeholder="Your e-Mail*"><br>
+                    <input type="text" class="name" name="subject" placeholder="Subject*">
+                </form>
+            </div>
+            <div class="textarea">
+                <form>
+                    <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                </form>    
+            </div>
         </div>
-        <div class="textarea">
-            <form>
-                <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
-                <input type="submit" value="SEND MESSAGE" class="btn btn-warning button">
-            </form>
+        <div>    
+            <div class="button">
+                <form>    
+                    <input type="submit" value="SEND MESSAGE" class="btn btn-warning button">
+                </form>
+            </div>         
         </div>                 
     </section>
-    <section class="footer">
+    <section class="footer container">
         <p>© Copyright 2014 FreebiesXpress.com</p>
         <i class="fab fa-twitter"></i>
         <i class="fab fa-facebook-f"></i>

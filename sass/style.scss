@@ -21,7 +21,7 @@ body {
     .col-s-12 {width: 100%;}
     
     header {
-    	nav {
+    	.nav {
     		ul {
     			float: none;
     			li {
@@ -66,9 +66,11 @@ body {
 }
 .header {
     background-image: url("../images/background-image.jpg");
-    width: 1400px;
+    background-size: cover;
     height: 700px;
-    nav {
+    .nav {
+        background-size: cover;
+        margin-top: 20px;
 		ul {
 			margin: 0;
 			padding: 0;
@@ -139,7 +141,8 @@ body {
     text-transform: uppercase;
     letter-spacing: -1px;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 100px;
+    display: block;
 }
 .smalltitle {
     width: 296px;
@@ -209,88 +212,95 @@ body {
 
    .item {
        display: flex;
-       align-items: top;
        justify-content: space-around;
-
-       
-       .text {
+        .item-hidden {
+            flex: 1;
+            order: 1;
+        }
+        .item-image {
+            flex: 1;
+            order: 2;
+            width: 170px;
+            height: 170px;
+            margin-top: 60px;
+            text-align: center;
+            img {
+                border-radius: 50%;
+                border: 10px solid #ddd;
+                position: relative;
+                    &:before{
+                    width: 10px;
+                    content: "";
+                    position: above;
+                    top: -50%;
+                    left: -50%;
+                    transform: translate(-50%, -50%);
+                    background: #ddd;
+                    z-index: -1;
+                    }
+            }
+        }  
+       .item-text {
         flex: 1;
-        order: 1;
+        order:3;
         height: 101px;
         color: #777777;
         font-family: "Roboto Slab";
         font-size: 14px;
         font-weight: 400;
         letter-spacing: -0.35px;
-            &:nth-child(even){
+        text-align: left;
+        margin-top: 100px;  
+       }
+         
+        &:nth-child(even) {
+            .item-hidden {
+                order:3;
+            }
+            .item-text {
+                order: 1;
                 text-align: right;
             }
-       }
-
-       .image {
-            flex: 1;
-            order: 2;
-            width: 170px;
-            height: 170px;
-            border-radius: 50%;
-            border: 7px solid #f1f1f1;
-            background-color: #fed136;
-            margin-top: 20px;
-       }
-
-       &:even {
-           .text {
-               order: 2;
-           }
-           .image{
-               order: 1;
-           }
-       }
-   }
+        }    
+    }
 }
 .picture {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    width: 170px;
-    height: 170px;
+    text-align: center;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    border: 7px solid #f1f1f1;
+    border: 10px solid #ddd;
     background-color: #fed136;
+    position: relative;
+    margin: 0 auto;
+        &:before{
+            width: 10px;
+            content: "";
+            position: above;
+            top: -50%;
+            left: -50%;
+            transform: translate(-50%, -50%);
+            background: #ddd;
+            z-index: -1;
+        }
     p {
-        -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
-    width: 107px;
-    height: 94px;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
-    color: #ffffff;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: -0.45px;
+        text-align: center;
+        padding: 30px;
+        width: 107px;
+        height: 94px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -0.45px;
     }
   }
-.image {
-    flex: 1;
-    order: 2;
-    width: 170px;
-    height: 170px;
-    border-radius: 50%;
-    border: 7px solid #f1f1f1;
-    background-color: #fed136;
-    margin-top: 20px;
-}
-.socialm {
-    background-color: #000000;
-    border-radius: 50%;
-    width: 42px;
-    height: 42px;
-}
+
+
 .team{
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
 }

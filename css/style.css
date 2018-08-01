@@ -138,11 +138,10 @@ body {
 
 .header .nav {
   background-size: cover;
-  margin-top: 20px;
 }
 
 .header .nav ul {
-  margin: 0;
+  margin-top: 20px;
   padding: 0;
   list-style-type: none;
   float: right;
@@ -393,6 +392,7 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  text-align: center;
 }
 
 .dot {
